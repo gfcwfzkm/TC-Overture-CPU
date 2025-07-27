@@ -1,0 +1,48 @@
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+# Unzipped Gerber files
+/KiCad/Gerber/
+
+# Personal files
+/docs/Unterstützungsantrag.pdf
+/docs/Unterstützungsantrag.docx
+/docs/Unterstützungsantrag FPGA-Devboard.zip
+
+# Gowin files to ignore
+/examples/01_starting_project/impl/gwsynthesis
+/examples/01_starting_project/impl/pnr
+/examples/02_RGBLED/impl/gwsynthesis
+/examples/02_RGBLED/impl/pnr
+
+# Simulation files / folders to ignore
+**/work/
+**.fst
+**/waveforms/
