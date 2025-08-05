@@ -63,10 +63,10 @@ begin
     -- Select the result register based on the instruction type
     with instruction_type_i select
         result_data_o <= "00" & immediate_value_i   when "00",
-                         alu_result               when "01",
+                         alu_result                 when "01",
                          source_register_i          when "10",
                          source_register_i          when "11",
-                         x"00"                    when others;
+                         x"00"                      when others;
 
     --! ALU entity to perform most operations (logic & arithmetic)
     ALU_INST : entity work.alu(rtl)
